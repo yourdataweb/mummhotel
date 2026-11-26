@@ -77,8 +77,10 @@
     <div class="bar__tools">
       <nav class="langs" aria-label="{{t.a11y.langSwitch}}">
         {{#each langs}}
-        <a class="langs__a" href="{{this.href}}" hreflang="{{this.code}}" lang="{{this.code}}"{{#if this.current}} aria-current="true"{{/if}}>
-          <span class="langs__f" aria-hidden="true">{{{this.flag}}}</span><span class="sr-only">{{this.name}}</span>
+        <a class="langs__link" href="{{this.href}}" hreflang="{{this.code}}" lang="{{this.code}}"{{#if this.current}} aria-current="true"{{/if}}>
+          <span class="langs__flag" aria-hidden="true">{{{this.flag}}}</span>
+          <span class="langs__code">{{this.code}}</span>
+          <span class="sr-only">{{this.name}}</span>
         </a>
         {{/each}}
       </nav>
