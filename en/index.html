@@ -52,7 +52,7 @@
       if (window.__gaLoaded) return; window.__gaLoaded = true;
       var s = document.createElement('script'); s.async = true;
       s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
-      document.head.appendChild(s); gtag('config', ID);
+      document.head.appendChild(s); gtag('config', ID, { cookie_domain: 'none' });
     }
     function grant() { load(); gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'}); }
     window.__analyticsConsent = function (ok) {
