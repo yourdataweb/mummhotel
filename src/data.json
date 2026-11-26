@@ -56,7 +56,6 @@
   "photoCredit": "BYPILLOW Mumm | Hotel en la playa de Vilanova i la Geltrú",
   "photoCreditUrl": "https://maps.google.com/maps/contrib/114542589134723283759",
   "siteDomain": "vilanovailageltru.info",
-  "sourceFile": "vilanova_i_la_geltru_catalonia_spain.csv",
   "redirects": {
     "ca": "/"
   },
@@ -66,5 +65,6 @@
   "deep": "#102635",
   "gold": "#c2a05a",
   "light": "#9dbcc9",
-  "shortName": "Mumm"
+  "shortName": "Mumm",
+  "photoSelector": ".stage__img"
 }
