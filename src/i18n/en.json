@@ -1,0 +1,122 @@
+{
+  "locale": "en",
+  "htmlLang": "en",
+  "ogLocale": "en_GB",
+  "pathPrefix": "../",
+  "countryName": "Spain",
+  "brand": {
+    "sub": "Seafront hotel · Vilanova"
+  },
+  "meta": {
+    "title": "Mumm · Seafront hotel in Vilanova i la Geltrú",
+    "description": "Hotel on Passeig Marítim, 88, Vilanova i la Geltrú, facing the beach. Rooms with balcony, air conditioning and breakfast, minutes from the Rambla. Bookings: 934 99 59 27.",
+    "ogAlt": "Mumm, seafront hotel in Vilanova i la Geltrú"
+  },
+  "nav": {
+    "rooms": "Rooms",
+    "hotel": "The hotel",
+    "reviews": "Reviews",
+    "book": "Book",
+    "skip": "Skip to main content",
+    "label": "Main navigation"
+  },
+  "hero": {
+    "kicker": "Passeig Marítim, 88 · Vilanova i la Geltrú",
+    "title": "A hotel right on the beach, without the fuss",
+    "lede": "Simple, bright rooms facing the sea, with a balcony, fridge and bathroom. A step from the beach and from the Rambla de la Pau, so you can enjoy Vilanova on foot.",
+    "book": "Call to book",
+    "seeRooms": "See the rooms",
+    "photoAlt": "photo of the seafront hotel",
+    "credit": "Photo:",
+    "photoCredit": "Mumm"
+  },
+  "facts": {
+    "label": "The essentials",
+    "where": "Location",
+    "phone": "Bookings",
+    "rating": "Rating",
+    "reviews": "reviews"
+  },
+  "rooms": {
+    "eyebrow": "Rooms",
+    "title": "Rooms facing the sea",
+    "lead": "Outside-facing rooms with a balcony and private bathroom. Simple, clean, and equipped for a short stay on the coast.",
+    "items": {
+      "r1": {
+        "name": "Double room with balcony",
+        "text": "Outside-facing, with a double or twin beds, a balcony and sea or promenade views.",
+        "amenities": [
+          "Balcony",
+          "Air conditioning",
+          "Fridge",
+          "Bath with tub"
+        ]
+      },
+      "r2": {
+        "name": "Standard double room",
+        "text": "Outside-facing room without a balcony, same basic equipment and good light.",
+        "amenities": [
+          "Air conditioning",
+          "Fridge",
+          "Private bathroom",
+          "Desk"
+        ]
+      },
+      "r3": {
+        "name": "Family room",
+        "text": "Space for three or four people, practical for short family breaks.",
+        "amenities": [
+          "Air conditioning",
+          "Fridge",
+          "Private bathroom",
+          "Extra bed"
+        ]
+      }
+    }
+  },
+  "hotel": {
+    "eyebrow": "The hotel",
+    "title": "Small, seafront and well placed",
+    "lead": "Mumm is a small hotel on the Passeig Marítim, with the beach across the promenade and the Rambla de la Pau five minutes on foot.",
+    "body": "It is not a hotel of endless facilities: it is a large guesthouse with outside-facing rooms and personal service. What the reviews praise most is the team and the location; if you are after a pool and a spa, this is not the place.",
+    "points": {
+      "a": "The beach across the promenade",
+      "b": "Outside-facing rooms with a balcony",
+      "c": "Fridge and air conditioning in every room",
+      "d": "The Rambla de la Pau, five minutes on foot",
+      "e": "Bookings and enquiries by phone"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What guests say",
+    "lead": "Extracts from reviews published on Google by people who have stayed. The average is 3.7 out of 5 across 477 reviews, with both very good and critical ones — all of them are on Google.",
+    "readAll": "Read all reviews"
+  },
+  "book": {
+    "eyebrow": "Book",
+    "title": "Call and we will tell you what is free",
+    "lead": "Bookings are taken by phone. Call us and we will confirm availability, price and arrival time.",
+    "address": "Address",
+    "phone": "Phone",
+    "plus": "Plus Code",
+    "call": "Call to book",
+    "directions": "Get directions",
+    "mapTitle": "Map showing the location of the Mumm hotel in Vilanova i la Geltrú",
+    "mapNote": "The map only loads if you accept third-party cookies.",
+    "mapLoad": "Load the map"
+  },
+  "foot": {
+    "legal": "This page is an information sheet for the hotel. For bookings, availability and terms, please contact the property directly. The reviews shown are extracts from public Google reviews."
+  },
+  "cookies": {
+    "text": "We use technical cookies to remember your choice. If you accept, we also measure visits with Google Analytics and load the Google map.",
+    "accept": "Accept",
+    "reject": "Essentials only",
+    "policy": "More information"
+  },
+  "a11y": {
+    "langSwitch": "Change language",
+    "menuToggle": "Open navigation menu"
+  }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<meta name="author" content="{{business.name}}">
+<meta name="theme-color" content="#1b3a4b">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{site.url}}/{{meta.canonicalPath}}">
+
+<meta property="og:type" content="hotel">
+<meta property="og:site_name" content="{{business.name}}">
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.description}}">
+<meta property="og:locale" content="{{meta.ogLocale}}">
+<meta property="og:url" content="{{site.url}}/{{meta.canonicalPath}}">
+<meta property="og:image" content="{{site.url}}/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{t.meta.ogAlt}}">
+<meta name="twitter:card" content="summary_large_image">
+
+{{#each alternates}}
+<link rel="alternate" hreflang="{{this.hreflang}}" href="{{@root.site.url}}/{{this.path}}">
+{{/each}}
+
+<link rel="icon" href="{{meta.assetBase}}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{meta.assetBase}}assets/img/apple-touch-icon.png">
+<link rel="manifest" href="{{meta.assetBase}}site.webmanifest">
+<link rel="preload" href="{{meta.assetBase}}assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{meta.assetBase}}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{meta.assetBase}}assets/css/styles.css">
+
+<script>
+  (function () {
+    var ID = 'G-71LT2Q093H'; var KEY = 'cookie-consent-v1'; var accepted = false;
+    try { accepted = localStorage.getItem(KEY) === 'accepted'; } catch (e) {}
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('consent', 'default', { ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied' });
+    function load() {
+      if (window.__gaLoaded) return; window.__gaLoaded = true;
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+      document.head.appendChild(s); gtag('config', ID);
+    }
+    function grant() { load(); gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'}); }
+    window.__analyticsConsent = function (ok) {
+      try { localStorage.setItem(KEY, ok ? 'accepted' : 'essential'); } catch (e) {}
+      if (ok) grant();
+    };
+    if (accepted) grant();
+  })();
+</script>
+<script type="application/ld+json">
+{{{jsonLd}}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">{{t.nav.skip}}</a>
+
+<header class="bar">
+  <div class="wrap bar__in">
+    <a class="logo" href="{{meta.assetBase}}">
+      <span class="logo__name">{{business.shortName}}</span>
+      <span class="logo__sub">{{t.brand.sub}}</span>
+    </a>
+    <nav class="bar__nav"  id="site-nav" data-open="false" aria-label="{{t.nav.label}}">
+      <a href="#rooms">{{t.nav.rooms}}</a>
+      <a href="#hotel">{{t.nav.hotel}}</a>
+      <a href="#reviews">{{t.nav.reviews}}</a>
+      <a href="#book">{{t.nav.book}}</a>
+    </nav>
+    <div class="bar__tools">
+      <nav class="langs" aria-label="{{t.a11y.langSwitch}}">
+        {{#each langs}}
+        <a class="langs__a" href="{{this.href}}" hreflang="{{this.code}}" lang="{{this.code}}"{{#if this.current}} aria-current="true"{{/if}}>
+          <span class="langs__f" aria-hidden="true">{{{this.flag}}}</span><span class="sr-only">{{this.name}}</span>
+        </a>
+        {{/each}}
+      </nav>
+      <button class="navbtn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="{{t.a11y.menuToggle}}">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Full-bleed photo hero: for a hotel the view *is* the product, so the photo
+       runs edge to edge and the booking action sits on top of it. -->
+  <section class="stage" aria-labelledby="stage-title">
+    {{#if heroPhoto}}
+    <img class="stage__img" src="{{meta.assetBase}}{{heroPhoto.src}}" alt="{{t.hero.photoAlt}}" width="1600" height="1200" fetchpriority="high" decoding="async">
+    {{/if}}
+    <div class="stage__veil"></div>
+    <div class="wrap stage__body">
+      <p class="stage__kicker">{{t.hero.kicker}}</p>
+      <h1 id="stage-title" class="stage__title">{{t.hero.title}}</h1>
+      <p class="stage__lede">{{t.hero.lede}}</p>
+      <div class="stage__cta">
+        <a class="btn btn--gold" href="tel:{{business.phoneE164}}">{{t.hero.book}}</a>
+        <a class="btn btn--ghost" href="#rooms">{{t.hero.seeRooms}}</a>
+      </div>
+    </div>
+    {{#if heroPhoto.credit}}
+    <p class="stage__credit" data-photo-credit>{{t.hero.credit}} {{#if heroPhoto.creditUrl}}<a href="{{heroPhoto.creditUrl}}" target="_blank" rel="noopener nofollow">{{heroPhoto.credit}}</a>{{else}}{{heroPhoto.credit}}{{/if}}</p>
+    {{/if}}
+  </section>
+
+  <!-- The essentials, as a band under the hero. Rating shown WITHOUT a star badge
+       because the score is below 4; the count is shown because it exceeds 50. -->
+  <section class="facts" aria-label="{{t.facts.label}}">
+    <div class="wrap facts__grid">
+      <div class="facts__cell">
+        <span class="facts__k">{{t.facts.where}}</span>
+        <span class="facts__v">{{business.addressShort}}</span>
+      </div>
+      <div class="facts__cell">
+        <span class="facts__k">{{t.facts.phone}}</span>
+        <span class="facts__v"><a href="tel:{{business.phoneE164}}">{{business.phoneNational}}</a></span>
+      </div>
+      <div class="facts__cell">
+        <span class="facts__k">{{t.facts.rating}}</span>
+        <span class="facts__v">{{business.ratingFormatted}}/5 · {{business.ratingCount}} {{t.facts.reviews}}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rooms" aria-labelledby="rooms-title">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">{{t.rooms.eyebrow}}</p>
+        <h2 id="rooms-title">{{t.rooms.title}}</h2>
+        <p class="lead">{{t.rooms.lead}}</p>
+      </div>
+      <div class="roomlist">
+        {{#each rooms}}
+        <article class="room reveal">
+          <h3>{{this.name}}</h3>
+          <p>{{this.text}}</p>
+          <ul class="room__amen">
+            {{#each this.amenities}}<li>{{this}}</li>{{/each}}
+          </ul>
+        </article>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="hotel" aria-labelledby="hotel-title">
+    <div class="wrap hotel">
+      <div class="hotel__text reveal">
+        <p class="eyebrow">{{t.hotel.eyebrow}}</p>
+        <h2 id="hotel-title">{{t.hotel.title}}</h2>
+        <p class="lead">{{t.hotel.lead}}</p>
+        <p>{{t.hotel.body}}</p>
+      </div>
+      <ul class="hotel__points reveal">
+        {{#each hotelPoints}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">{{t.reviews.eyebrow}}</p>
+        <h2 id="reviews-title">{{t.reviews.title}}</h2>
+        <p class="lead">{{t.reviews.lead}}</p>
+      </div>
+      <div class="quotes">
+        {{#each quotes}}
+        <figure class="quote reveal">
+          <blockquote><p>{{this.text}}</p></blockquote>
+          <figcaption>{{this.author}} · {{this.meta}}</figcaption>
+        </figure>
+        {{/each}}
+      </div>
+      <a class="morelink" href="{{links.reviews}}" target="_blank" rel="noopener">{{t.reviews.readAll}}
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="section section--deep" id="book" aria-labelledby="book-title">
+    <div class="wrap book">
+      <div class="reveal">
+        <p class="eyebrow">{{t.book.eyebrow}}</p>
+        <h2 id="book-title">{{t.book.title}}</h2>
+        <p class="lead">{{t.book.lead}}</p>
+        <dl class="booklist">
+          <div><dt>{{t.book.address}}</dt><dd>{{business.street}}<br>{{business.postalCode}} {{business.city}}</dd></div>
+          <div><dt>{{t.book.phone}}</dt><dd><a href="tel:{{business.phoneE164}}">{{business.phoneNational}}</a></dd></div>
+          <div><dt>{{t.book.plus}}</dt><dd>{{business.plusCode}}</dd></div>
+        </dl>
+        <div class="book__cta">
+          <a class="btn btn--gold" href="tel:{{business.phoneE164}}">{{t.book.call}}</a>
+          <a class="btn btn--ghost" href="{{links.directions}}" target="_blank" rel="noopener">{{t.book.directions}}</a>
+        </div>
+      </div>
+      <div class="mapshell" id="map-shell" data-map-loaded="false">
+        <div class="mapgate">
+          <p>{{t.book.mapNote}}</p>
+          <button class="btn btn--gold" type="button" data-map-load>{{t.book.mapLoad}}</button>
+        </div>
+        <template id="map-template">
+          <iframe title="{{t.book.mapTitle}}" src="{{links.mapEmbed}}" width="600" height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </template>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__name">{{business.name}}</p>
+    <p class="foot__meta">{{business.street}} · {{business.postalCode}} {{business.city}}</p>
+    <p class="foot__meta"><a href="tel:{{business.phoneE164}}">{{business.phoneNational}}</a></p>
+  </div>
+  <div class="wrap foot__legal">
+    <p>{{t.foot.legal}}</p>
+    <p>© <span id="year">{{year}}</span> {{business.name}}</p>
+  </div>
+</footer>
+
+<div class="cookies" id="cookiebar" role="region" aria-label="{{t.cookies.policy}}" data-visible="false">
+  <p>{{t.cookies.text}}</p>
+  <div class="cookies__a">
+    <button class="btn btn--ghost btn--sm" type="button" data-cookie="essential">{{t.cookies.reject}}</button>
+    <button class="btn btn--gold btn--sm" type="button" data-cookie="accept">{{t.cookies.accept}}</button>
+  </div>
+</div>
+
+<script src="{{meta.assetBase}}assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "locale": "ca",
+  "htmlLang": "ca",
+  "ogLocale": "ca_ES",
+  "pathPrefix": "./",
+  "countryName": "Espanya",
+  "brand": {
+    "sub": "Hotel davant la platja · Vilanova"
+  },
+  "meta": {
+    "title": "Mumm · Hotel davant la platja de Vilanova i la Geltrú",
+    "description": "Hotel al Passeig Marítim, 88, Vilanova i la Geltrú, davant de la platja. Habitacions amb balcó, aire condicionat i esmorzar, a pocs minuts de la Rambla. Reserves: 934 99 59 27.",
+    "ogAlt": "Mumm, hotel davant la platja de Vilanova i la Geltrú"
+  },
+  "nav": {
+    "rooms": "Habitacions",
+    "hotel": "L'hotel",
+    "reviews": "Opinions",
+    "book": "Reservar",
+    "skip": "Ves al contingut principal",
+    "label": "Navegació principal"
+  },
+  "hero": {
+    "kicker": "Passeig Marítim, 88 · Vilanova i la Geltrú",
+    "title": "Un hotel a peu de platja, sense complicacions",
+    "lede": "Habitacions senzilles i lluminoses davant del mar, amb balcó, nevera i bany. A un pas de la platja i de la Rambla de la Pau, per gaudir de Vilanova caminant.",
+    "book": "Trucar per reservar",
+    "seeRooms": "Veure habitacions",
+    "photoAlt": "foto de l'hotel davant la platja",
+    "credit": "Foto:",
+    "photoCredit": "Mumm"
+  },
+  "facts": {
+    "label": "L'essencial",
+    "where": "Ubicació",
+    "phone": "Reserves",
+    "rating": "Valoració",
+    "reviews": "opinions"
+  },
+  "rooms": {
+    "eyebrow": "Habitacions",
+    "title": "Habitacions davant del mar",
+    "lead": "Habitacions exteriors, amb balcó i bany propi. Senzilles, netes i amb el que cal per a una estada curta a la costa.",
+    "items": {
+      "r1": {
+        "name": "Habitació doble amb balcó",
+        "text": "Exterior, amb llit de matrimoni o dos individuals, balcó i vistes al mar o al passeig.",
+        "amenities": [
+          "Balcó",
+          "Aire condicionat",
+          "Nevera",
+          "Bany amb banyera"
+        ]
+      },
+      "r2": {
+        "name": "Habitació doble estàndard",
+        "text": "Habitació exterior sense balcó, amb el mateix equipament bàsic i bona llum.",
+        "amenities": [
+          "Aire condicionat",
+          "Nevera",
+          "Bany propi",
+          "Escriptori"
+        ]
+      },
+      "r3": {
+        "name": "Habitació familiar",
+        "text": "Espai per a tres o quatre persones, pràctica per a escapades curtes en família.",
+        "amenities": [
+          "Aire condicionat",
+          "Nevera",
+          "Bany propi",
+          "Llits supletori"
+        ]
+      }
+    }
+  },
+  "hotel": {
+    "eyebrow": "L'hotel",
+    "title": "Petit, davant del mar i ben situat",
+    "lead": "El Mumm és un hotel petit al Passeig Marítim, amb la platja a l'altra banda del passeig i la Rambla de la Pau a cinc minuts a peu.",
+    "body": "No és un hotel d'instal·lacions infinites: és una casa d'hostes gran, amb habitacions exteriors i un tracte proper. El que més es valora a les opinions és l'equip i la ubicació; si busques piscina i spa, aquest no és el lloc.",
+    "points": {
+      "a": "Platja a l'altra banda del passeig",
+      "b": "Habitacions exteriors amb balcó",
+      "c": "Nevera i aire condicionat a totes",
+      "d": "La Rambla de la Pau, a cinc minuts a peu",
+      "e": "Reserves i atenció per telèfon"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Opinions",
+    "title": "Què diuen els hostes",
+    "lead": "Extractes d'opinions publicades a Google per persones que s'hi han allotjat. La valoració mitjana és de 3,7 sobre 5 amb 477 opinions, i n'hi ha de molt bones i de crítiques: les dues coses són a Google.",
+    "readAll": "Llegeix totes les opinions"
+  },
+  "book": {
+    "eyebrow": "Reservar",
+    "title": "Truca i et diem què hi ha lliure",
+    "lead": "Les reserves es fan per telèfon. Truca'ns i et confirmem disponibilitat, preu i hora d'arribada.",
+    "address": "Adreça",
+    "phone": "Telèfon",
+    "plus": "Plus Code",
+    "call": "Trucar per reservar",
+    "directions": "Com arribar-hi",
+    "mapTitle": "Mapa amb la ubicació de l'hotel Mumm a Vilanova i la Geltrú",
+    "mapNote": "El mapa només es carrega si acceptes les galetes de tercers.",
+    "mapLoad": "Carrega el mapa"
+  },
+  "foot": {
+    "legal": "Aquesta pàgina és una fitxa informativa de l'hotel. Per a reserves, disponibilitat i condicions, contacta directament amb l'establiment. Les opinions mostrades són extractes de ressenyes públiques de Google."
+  },
+  "cookies": {
+    "text": "Fem servir galetes tècniques per recordar la teva elecció. Si acceptes, també mesurem les visites amb Google Analytics i carreguem el mapa de Google.",
+    "accept": "Accepta",
+    "reject": "Només essencials",
+    "policy": "Més informació"
+  },
+  "a11y": {
+    "langSwitch": "Canviar d'idioma",
+    "menuToggle": "Obre el menú de navegació"
+  }
+}

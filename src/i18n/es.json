@@ -1,0 +1,122 @@
+{
+  "locale": "es",
+  "htmlLang": "es",
+  "ogLocale": "es_ES",
+  "pathPrefix": "../",
+  "countryName": "España",
+  "brand": {
+    "sub": "Hotel frente a la playa · Vilanova"
+  },
+  "meta": {
+    "title": "Mumm · Hotel frente a la playa de Vilanova i la Geltrú",
+    "description": "Hotel en el Passeig Marítim, 88, Vilanova i la Geltrú, frente a la playa. Habitaciones con balcón, aire acondicionado y desayuno, a pocos minutos de la Rambla. Reservas: 934 99 59 27.",
+    "ogAlt": "Mumm, hotel frente a la playa de Vilanova i la Geltrú"
+  },
+  "nav": {
+    "rooms": "Habitaciones",
+    "hotel": "El hotel",
+    "reviews": "Opiniones",
+    "book": "Reservar",
+    "skip": "Ir al contenido principal",
+    "label": "Navegación principal"
+  },
+  "hero": {
+    "kicker": "Passeig Marítim, 88 · Vilanova i la Geltrú",
+    "title": "Un hotel a pie de playa, sin complicaciones",
+    "lede": "Habitaciones sencillas y luminosas frente al mar, con balcón, nevera y baño. A un paso de la playa y de la Rambla de la Pau, para disfrutar de Vilanova caminando.",
+    "book": "Llamar para reservar",
+    "seeRooms": "Ver habitaciones",
+    "photoAlt": "foto del hotel frente a la playa",
+    "credit": "Foto:",
+    "photoCredit": "Mumm"
+  },
+  "facts": {
+    "label": "Lo esencial",
+    "where": "Ubicación",
+    "phone": "Reservas",
+    "rating": "Valoración",
+    "reviews": "opiniones"
+  },
+  "rooms": {
+    "eyebrow": "Habitaciones",
+    "title": "Habitaciones frente al mar",
+    "lead": "Habitaciones exteriores, con balcón y baño propio. Sencillas, limpias y con lo necesario para una estancia corta en la costa.",
+    "items": {
+      "r1": {
+        "name": "Habitación doble con balcón",
+        "text": "Exterior, con cama de matrimonio o dos individuales, balcón y vistas al mar o al paseo.",
+        "amenities": [
+          "Balcón",
+          "Aire acondicionado",
+          "Nevera",
+          "Baño con bañera"
+        ]
+      },
+      "r2": {
+        "name": "Habitación doble estándar",
+        "text": "Habitación exterior sin balcón, con el mismo equipamiento básico y buena luz.",
+        "amenities": [
+          "Aire acondicionado",
+          "Nevera",
+          "Baño propio",
+          "Escritorio"
+        ]
+      },
+      "r3": {
+        "name": "Habitación familiar",
+        "text": "Espacio para tres o cuatro personas, práctica para escapadas cortas en familia.",
+        "amenities": [
+          "Aire acondicionado",
+          "Nevera",
+          "Baño propio",
+          "Cama supletoria"
+        ]
+      }
+    }
+  },
+  "hotel": {
+    "eyebrow": "El hotel",
+    "title": "Pequeño, frente al mar y bien situado",
+    "lead": "Mumm es un hotel pequeño en el Passeig Marítim, con la playa al otro lado del paseo y la Rambla de la Pau a cinco minutos andando.",
+    "body": "No es un hotel de instalaciones infinitas: es una casa de huéspedes grande, con habitaciones exteriores y un trato cercano. Lo que más se valora en las opiniones es el equipo y la ubicación; si buscas piscina y spa, este no es el sitio.",
+    "points": {
+      "a": "Playa al otro lado del paseo",
+      "b": "Habitaciones exteriores con balcón",
+      "c": "Nevera y aire acondicionado en todas",
+      "d": "La Rambla de la Pau, a cinco minutos andando",
+      "e": "Reservas y atención por teléfono"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Opiniones",
+    "title": "Qué dicen los huéspedes",
+    "lead": "Extractos de opiniones publicadas en Google por personas alojadas. La valoración media es de 3,7 sobre 5 con 477 opiniones, y hay tanto muy buenas como críticas: ambas están en Google.",
+    "readAll": "Leer todas las opiniones"
+  },
+  "book": {
+    "eyebrow": "Reservar",
+    "title": "Llama y te decimos qué hay libre",
+    "lead": "Las reservas se hacen por teléfono. Llámanos y te confirmamos disponibilidad, precio y hora de llegada.",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "plus": "Plus Code",
+    "call": "Llamar para reservar",
+    "directions": "Cómo llegar",
+    "mapTitle": "Mapa con la ubicación del hotel Mumm en Vilanova i la Geltrú",
+    "mapNote": "El mapa solo se carga si aceptas las cookies de terceros.",
+    "mapLoad": "Cargar el mapa"
+  },
+  "foot": {
+    "legal": "Esta página es una ficha informativa del hotel. Para reservas, disponibilidad y condiciones, contacta directamente con el establecimiento. Las opiniones mostradas son extractos de reseñas públicas de Google."
+  },
+  "cookies": {
+    "text": "Usamos cookies técnicas para recordar tu elección. Si aceptas, además medimos las visitas con Google Analytics y cargamos el mapa de Google.",
+    "accept": "Aceptar",
+    "reject": "Solo lo esencial",
+    "policy": "Más información"
+  },
+  "a11y": {
+    "langSwitch": "Cambiar de idioma",
+    "menuToggle": "Abrir menú de navegación"
+  }
+}
