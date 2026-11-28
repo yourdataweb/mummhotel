@@ -34,6 +34,8 @@
 <link rel="stylesheet" href="{{meta.assetBase}}assets/css/components.css">
 <link rel="stylesheet" href="{{meta.assetBase}}assets/css/header-tools.css">
 <link rel="stylesheet" href="{{meta.assetBase}}assets/css/styles.css">
+<link rel="stylesheet" href="{{meta.assetBase}}assets/css/offer-panel.css">
+
 
 <script>
   (function () {
@@ -245,6 +247,10 @@
 
 <script src="{{meta.assetBase}}assets/js/components.js" defer></script>
 <script src="{{meta.assetBase}}assets/js/main.js" defer></script>
+{{#if offer}}
+<script type="application/json" id="sm-offer-config">{{{offer.json}}}</script>
+<script src="{{meta.assetBase}}assets/js/offer-panel.js" defer></script>
+{{/if}}
 <script src="{{meta.assetBase}}assets/js/header-tools.js" defer></script>
 </body>
 </html>

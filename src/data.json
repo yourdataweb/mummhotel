@@ -66,5 +66,8 @@
   "gold": "#c2a05a",
   "light": "#9dbcc9",
   "shortName": "Mumm",
-  "photoSelector": ".stage__img"
+  "photoSelector": ".stage__img",
+  "offerEnds": "2027-02-26",
+  "buyUrl": "",
+  "offerEmail": ""
 }
